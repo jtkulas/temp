@@ -154,6 +154,7 @@ The following site walks you through the software requirements and the installat
 
 <https://crsh.github.io/papaja_man/introduction.html#getting-started> 
 
+![](https://media.giphy.com/media/8Pa4hiMm6IEJW/giphy.gif)
 
 ---
 ## Let's do a .pdf file!!!!
