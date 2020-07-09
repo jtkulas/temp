@@ -144,6 +144,17 @@ Within 3 (different) breakout rooms:
 
 
 ![](https://cdn.pixabay.com/photo/2018/09/04/10/27/learn-3653430__480.jpg)
+
+
+---
+
+## Papaja! 
+
+The following site walks you through the software requirements and the installation of papaja.
+
+<https://crsh.github.io/papaja_man/introduction.html#getting-started> 
+
+
 ---
 ## Let's do a .pdf file!!!!
 
