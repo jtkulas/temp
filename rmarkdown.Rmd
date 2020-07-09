@@ -150,18 +150,21 @@ Within 3 (different) breakout rooms:
 
 ## Papaja! 
 
-The following site walks you through the software requirements and the installation of papaja.
+The following site walks you through the installation of `papaja` and more generally explains the need to use a TeX add-on with .pdf files:
 
 <https://crsh.github.io/papaja_man/introduction.html#getting-started> 
 
 ![](https://media.giphy.com/media/8Pa4hiMm6IEJW/giphy.gif)
 
 ---
-## Let's do a .pdf file!!!!
+## Let's first try a generic .pdf file!!!!
 
-Walk through the MikTex vs. TinyTex options 
+1. There are MikTex and TinyTex options 
+2. Generate a template markdown document (but as a .pdf)
 
-> Maybe do an experiment and have half install TinyTex and half MikTex?
+> Let's do an experiment and have half install TinyTex and half MikTex!
+
+![](https://media.giphy.com/media/iNQ2cIve8rUqI/giphy.gif)
 
 ---
 ## Exercise (Part III)
