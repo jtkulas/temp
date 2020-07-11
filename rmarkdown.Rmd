@@ -132,6 +132,14 @@ To edit the output of a chunk you can add different arguments to the `{r}` comma
 
 ---
 
+## Great resource
+
+There's a very accessible and *appropriately detailed* high-level overview of everything you probably need to get started (and launch off) with Markdown [located here](https://codingclubuc3m.rbind.io/post/2019-09-24/) 
+
+![](https://media.giphy.com/media/l49JLOdJMXePYxYfm/giphy.gif)
+
+---
+
 ## Exercise (Part II)
 
 Within 3 (different) breakout rooms:
