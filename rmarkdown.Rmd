@@ -158,11 +158,20 @@ Within 3 (different) breakout rooms:
 
 ## Papaja! 
 
-The following site walks you through the installation of `papaja` and more generally explains the need to use a TeX add-on with .pdf files:
+The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
 
 <https://crsh.github.io/papaja_man/introduction.html#getting-started> 
 
 ![](https://media.giphy.com/media/8Pa4hiMm6IEJW/giphy.gif)
+
+---
+## What papja documents "look like"
+
+There are two primary output formats that you'll be interested in: 
+1. APA formatted manuscript (`man`), and
+2. Journal formatted manuscript (`jou`)
+
+![](papaja.png)
 
 ---
 ## Let's first try a generic .pdf file!!!!
