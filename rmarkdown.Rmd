@@ -22,7 +22,7 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 ## Last time
 
-Recall that our last meeting entailed an introduction to rMarkdown's capabilties and getting each of your personal computers to generate a default template .html file. At this point in time, you are expected to:
+Recall that the first part of this tutorial entailed an introduction to rMarkdown's capabilities and getting each of your personal computers to generate a default template .html file. At this point in time, you should be able to:
 
 + Understand the differences between R, R Studio, and rMarkdown
 + Be aware that rMarkdown has multiple capabilities
@@ -35,9 +35,9 @@ Recall that our last meeting entailed an introduction to rMarkdown's capabilties
 
 ---
 
-## Tonight's goals
+## Tutorial's goals
 
-Tonight we'll revisit the default template creation, but also:
+We'll revisit the default template creation, but also:
 
 + Tweak the template (by asking for different output and writing slightly different commands)
     + Document title, author(s), plot edits
