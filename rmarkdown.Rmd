@@ -16,7 +16,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is the second part of the introduction to our R Markdown tutorial. As we saw in the first part of this tutorial, Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ---
 
