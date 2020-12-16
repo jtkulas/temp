@@ -108,12 +108,6 @@ Within 3 breakout rooms:
 
 ---
 
-To edit the output of a chunk you can add different arguments to the `{r}` command: 
-
-![Editing output of chunk](image2.png)
-
----
-
 ## "Chunks"
 
 Chunks are blocks of data analyses. This is where we'll be requesting analyses and writing the `R` code commands you're already familiar with...
@@ -121,7 +115,7 @@ Chunks are blocks of data analyses. This is where we'll be requesting analyses a
 You can edit the output of your chunk to determine what your final document displays. For example with the command `echo = ` 
  
  ![Output](image3.png)
- 
+
 ---
 
 ## Creating a chunk:
