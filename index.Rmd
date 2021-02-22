@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>rMarkdown</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Kulas Renata" />
-    <link href="rmarkdown_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="rmarkdown_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+title: "rMarkdown"
+author: "Kulas Renata"
+date: "6/13/2020"
+resource_files:
+  - create.jpg
+output:
+  xaringan::moon_reader:
+    seal: false
+---
 
-
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
 
 ## rMarkdown (Part Deux!!)
@@ -19,7 +19,7 @@
 ![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
 
 This is the second part of the introduction to our R Markdown tutorial. As we saw in the first part of this tutorial, Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
-For more details on using R Markdown see &lt;http://rmarkdown.rstudio.com&gt;.
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ---
 
@@ -32,7 +32,7 @@ Recall that the first part of this tutorial entailed an introduction to rMarkdow
     + .html files, .pdf files, presentations, academic manuscripts
 + Be able to generate an example default .html template on your personal computer
 
-&gt; Is anyone not caught up with the above status points?
+> Is anyone not caught up with the above status points?
 
 ![](https://media.giphy.com/media/ZXKZWB13D6gFO/giphy.gif)
 
@@ -60,11 +60,11 @@ We'll revisit the default template creation, but also:
 
 ## Creating
 
-Recall the process to create a new rMarkdown file: File -&gt; New File -&gt; R Markdown
+Recall the process to create a new rMarkdown file: File -> New File -> R Markdown
 
 ...then follow the wizard prompts
 
-&lt;img src="create.jpg";&gt;
+<img src="create.jpg";>
 
 ---
 
@@ -72,7 +72,7 @@ Recall the process to create a new rMarkdown file: File -&gt; New File -&gt; R M
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
-&gt; Kulas or Renata screen-share here and walk-through if necessary
+> Kulas or Renata screen-share here and walk-through if necessary
 
 ![](knit.png)
 
@@ -93,7 +93,7 @@ Note the "tick mark". That little symbol indicates that we want to use an "inlin
 
 ![Changing Date](time.png)
 
-Line numbers 8 `\(\rightarrow\)` 10 and 18 `\(\rightarrow\)` 20 represent two "chunks"
+Line numbers 8 $\rightarrow$ 10 and 18 $\rightarrow$ 20 represent two "chunks"
 
 ---
 ## Exercise (Part I)
@@ -157,7 +157,7 @@ Within 3 (different) breakout rooms:
 
 The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
 
-&lt;https://crsh.github.io/papaja_man/introduction.html#getting-started&gt; 
+<https://crsh.github.io/papaja_man/introduction.html#getting-started> 
 
 ![](https://media.giphy.com/media/8Pa4hiMm6IEJW/giphy.gif)
 
@@ -176,7 +176,7 @@ There are two primary output formats that you'll be interested in:
 1. There are MikTex and TinyTex options 
 2. Generate a template markdown document (but as a .pdf)
 
-&gt; Let's do an experiment and have half install TinyTex and half MikTex!
+> Let's do an experiment and have half install TinyTex and half MikTex!
 
 ![](https://media.giphy.com/media/iNQ2cIve8rUqI/giphy.gif)
 
@@ -203,105 +203,3 @@ That's it for tonight - any questions?
 
 ...any requests for what to cover in the next rMarkdown session? 
 Hey Look! [Interactive Markdown Documents](https://www.youtube.com/watch?v=sQjnvaf072M)
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
