@@ -49,7 +49,9 @@ We'll revisit the default template creation, but also:
 + Create a .pdf file as output
     + The .pdf option opens up many possibilities with rMarkdown
         + For example, academic papers with `papaja`
-        
+
+![](goals.png)
+
 ---
 
 ## Let's try the default HTML document!
