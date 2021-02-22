@@ -40,7 +40,7 @@ Recall that the first part of this tutorial entailed an introduction to rMarkdow
 
 ## Tutorial's goals
 
-We'll revisit the default template creation, but also:
+.pull-left[We'll revisit the default template creation, but also:
 
 + Tweak the template (by asking for different output and writing slightly different commands)
     + Document title, author(s), plot edits
@@ -49,8 +49,11 @@ We'll revisit the default template creation, but also:
 + Create a .pdf file as output
     + The .pdf option opens up many possibilities with rMarkdown
         + For example, academic papers with `papaja`
+]
 
+.pull-right[
 ![](goals.png)
+]
 
 ---
 
@@ -62,7 +65,7 @@ We'll revisit the default template creation, but also:
 
 ## Creating
 
-Recall the process to create a new rMarkdown file: File -> New File -> R Markdown
+Recall the process to create a new rMarkdown file: File $\rightarrow$ New File $\rightarrow$ R Markdown
 
 ...then follow the wizard prompts
 
@@ -72,12 +75,15 @@ Recall the process to create a new rMarkdown file: File -> New File -> R Markdow
 
 ## Activating
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+.pull-right[
+When you click the `Knit` button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 > Kulas or Renata screen-share here and walk-through if necessary
+]
 
-![](knit.png)
-
+.pull-left[
+![](https://media.giphy.com/media/3oEhmHmWP3Y9wQxoli/giphy.gif)
+]
 
 ---
 
@@ -85,7 +91,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ...if you merely accept the default template, after you "knit", you should see this file pop up (note the elements and where they align in the script and output):
 
-![Template Output](template.png)
+![](template.png)
 
 ---
 
