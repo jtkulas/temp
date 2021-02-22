@@ -2,6 +2,8 @@
 title: "rMarkdown"
 author: "Kulas Renata"
 date: "6/13/2020"
+resource_files:
+  - create.jpg
 output:
   xaringan::moon_reader:
     seal: false
@@ -62,7 +64,7 @@ Recall the process to create a new rMarkdown file: File -> New File -> R Markdow
 
 ...then follow the wizard prompts
 
-![](create.png)
+<img src="create.jpg";>
 
 ---
 
