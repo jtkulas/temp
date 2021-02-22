@@ -23,8 +23,6 @@ This is one of a number of tutorials published by [Eagle I.O](https://eagle-io.w
 ![](renata2.jpg)
 ]
 
-...and 
-
 .pull-right[[John Kulas](https://www.linkedin.com/in/john-kulas-184a031/)
 
 ![](kulas.jpg)
