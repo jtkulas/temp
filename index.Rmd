@@ -13,6 +13,24 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## rMarkdown Tutorial
+
+This is one of a number of tutorials published by [Eagle I.O](https://eagle-io.weebly.com/) - this one was authored by 
+
+.pull-left[
+[Renata Garcia Prieto Palacios Roji](https://www.linkedin.com/in/renatagppr/) 
+
+![](renata2.jpg)
+]
+
+...and 
+
+.pull-right[[John Kulas](https://www.linkedin.com/in/john-kulas-184a031/)
+
+![](kulas.jpg)
+]
+
+---
 
 ## rMarkdown (Part Deux!!)
 
@@ -89,13 +107,10 @@ When you click the `Knit` button a document will be generated that includes both
 
 ## You should get this:
 
-.pull-left[
 ...if you merely accept the default template, after you "knit", you should see this file pop up (note the elements and where they align in the script and output):
-]
 
-.pull-right[
+
 ![](template.PNG)
-]
 
 ---
 
