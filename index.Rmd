@@ -30,7 +30,7 @@ This presentation is just one of a number of different tutorials produced by [Ea
 
 ---
 
-## rMarkdown (Part Deux!!)
+## rMarkdown
 
 ![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
 
@@ -40,39 +40,20 @@ For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ---
 
-## Last time
+## What you missed 
 
-The first part of this tutorial entailed an introduction to rMarkdown's capabilities and getting everyone's personal computers to generate a default template .html file. At this point in time, you should be able to:
+The first part of this tutorial entailed an introduction to rMarkdown's capabilities and getting everyone's personal computers to generate a default template .html file. We will get everyone up to speed in the following slides. Specifically, after this you should be able to:
 
 + Understand the differences between R, R Studio, and rMarkdown
 + Be aware that rMarkdown has multiple capabilities
     + .html files, .pdf files, presentations, academic manuscripts
 + Be able to generate an example default .html template on your personal computer
 
-> Is anyone not caught up with the above status points?
 
 ![](https://media.giphy.com/media/ZXKZWB13D6gFO/giphy.gif)
 
 ---
 
-## Tutorial's goals
-
-.pull-left[We'll revisit the default template creation, but also:
-
-+ Tweak the template (by asking for different output and writing slightly different commands)
-    + Document title, author(s), plot edits
-    + Adding new `chunks`
-        + Tweaking `chunk` options
-+ Create a .pdf file as output
-    + The .pdf option opens up many possibilities with rMarkdown
-        + For example, academic papers with `papaja`
-]
-
-.pull-right[
-![](goals.png)
-]
-
----
 
 ## Let's try the default HTML document again!
 
@@ -82,7 +63,7 @@ The first part of this tutorial entailed an introduction to rMarkdown's capabili
 
 ## Creating
 
-Recall the process to create a new rMarkdown file: File $\rightarrow$ New File $\rightarrow$ R Markdown
+The process to create a new rMarkdown file: File $\rightarrow$ New File $\rightarrow$ R Markdown
 
 ...then follow the wizard prompts
 
@@ -95,7 +76,6 @@ Recall the process to create a new rMarkdown file: File $\rightarrow$ New File $
 .pull-right[
 When you click the `Knit` button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
-> Kulas or Renata screen-share here and walk-through if necessary
 ]
 
 .pull-left[
@@ -103,6 +83,7 @@ When you click the `Knit` button a document will be generated that includes both
 ]
 
 ---
+
 
 ## You should get this:
 
@@ -113,28 +94,6 @@ When you click the `Knit` button a document will be generated that includes both
 
 ---
 
-## Change the date:
-
-Note the "tick mark". That little symbol indicates that we want to use an "inline" command (this means it's a software command *outside* of a chunk). The commands can be many different languages, but we'll mostly be using `r`. 
-
-![](time.PNG)
-
-Line numbers 8 $\rightarrow$ 10 and 18 $\rightarrow$ 20 represent two "chunks"
-
----
-## Exercise (Part I)
-
-Within 3 breakout rooms: 
-
-1. Change the **title** of your .html document to some creative description of your choice
-2. Change the **authorship** to YOU (or your nickname)
-3. Change the **color** of the points within the `plot(pressure)` scatterplot
-
-...when we reconnect, screenshare your output (everyone)
-
-![](https://media.giphy.com/media/xT9DPIBYf0pAviBLzO/giphy.gif)
-
----
 
 ## "Chunks"
 
@@ -155,6 +114,51 @@ To edit the output of a chunk you can add different arguments to the `{r}` comma
 
 ---
 
+
+## Additional actions
+
+.pull-left[We'll revisit the default template creation, but also:
+
++ Tweak the template (by asking for different output and writing slightly different commands)
+    + Document title, author(s), plot edits
+    + Adding new `chunks`
+        + Tweaking `chunk` options
++ Create a .pdf file as output
+    + The .pdf option opens up many possibilities with rMarkdown
+        + For example, academic papers with `papaja`
+]
+
+.pull-right[
+![](goals.png)
+]
+
+
+---
+
+## Change the date:
+
+Note the "tick mark". That little symbol indicates that we want to use an "inline" command (this means it's a software command *outside* of a chunk). The commands can be many different languages, but we'll mostly be using `r`. 
+
+![](time.PNG)
+
+Line numbers 8 $\rightarrow$ 10 and 18 $\rightarrow$ 20 represent two "chunks"
+
+---
+
+
+## Exercise (Part I)
+
+
+1. Change the **title** of your .html document to some creative description of your choice
+2. Change the **authorship** to YOU (or your nickname)
+3. Change the **color** of the points within the `plot(pressure)` scatter plot
+
+
+![](https://media.giphy.com/media/xT9DPIBYf0pAviBLzO/giphy.gif)
+
+---
+
+
 ## Great resource
 
 There's a very accessible and *appropriately detailed* high-level overview of everything you probably need to get started (and launch off) with Markdown [located here](https://codingclubuc3m.rbind.io/post/2019-09-24/) 
@@ -165,13 +169,10 @@ There's a very accessible and *appropriately detailed* high-level overview of ev
 
 ## Exercise (Part II)
 
-Within 3 (different) breakout rooms:
 
 4. Create a new chunk in your document
     + The new chunk will request a histogram of the `speed` variable within the `cars` dataset
 5. Edit the output of your chunk using the commands we learned (play with different `TRUE/FALSE` commands)
-
-...when we reconnect, screenshare your output (everyone)
 
 
 ![](https://cdn.pixabay.com/photo/2018/09/04/10/27/learn-3653430__480.jpg)
@@ -180,6 +181,8 @@ Within 3 (different) breakout rooms:
 ---
 
 ## Papaja! 
+
+This is an R package that provides document formats to produce complete APA manuscripts from RMarkdown files (either PDF or Word), it also has helper functions that facilitate reporting statistics, tables, and plots. 
 
 The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
 
@@ -202,28 +205,25 @@ There are two primary output formats that you'll be interested in:
 1. There are MikTex and TinyTex options 
 2. Generate a template markdown document (but as a .pdf)
 
-> Let's do an experiment and have half install TinyTex and half MikTex!
 
 ![](https://media.giphy.com/media/iNQ2cIve8rUqI/giphy.gif)
 
 ---
 ## Exercise (Part III)
 
-In (yet again) 3 different breakout rooms, help each other:
 
 1. Change your previous **.html** output to a **.pdf**
 2. Install `papaja` from GitHub and knit a template manuscript
     + You'll also need to have the `devtools` package installed
     + ...then type `devtools::install_github("crsh/papaja")`
 
-...then share your output (everyone)
 
 ![](https://cdn.pixabay.com/photo/2020/04/16/14/06/llama-5050778__480.jpg)
 
 ---
 ## The End
 
-That's it for tonight - any questions?
+That's it for now 
 
 ![](https://media.giphy.com/media/l4pTjOu0NsrLApt0Q/giphy.gif)
 
