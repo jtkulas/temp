@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>rMarkdown</title>
+    <title>RMarkdown</title>
     <meta charset="utf-8" />
     <meta name="author" content="Kulas Renata" />
-    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="index_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="index_files/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sfah.css" type="text/css" />
+    <link rel="stylesheet" href="fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -13,7 +14,7 @@
 
 
 
-## rMarkdown Tutorial
+## `R`Markdown Tutorial
 
 This presentation is just one of a number of different tutorials produced by [Eagle I.O](https://eagle-io.weebly.com/) and is intended to serve as an introductory guide for MSU Psychology graduate students interested in extending their `R` skills - this one was authored by: 
 
@@ -30,22 +31,22 @@ This presentation is just one of a number of different tutorials produced by [Ea
 
 ---
 
-## rMarkdown
+## `R`Markdown
 
 ![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
 
-The [current walk-through](https://github.com/jtkulas/temp) was actually first presented as a follow-up to another "introduction to R Markdown" tutorial. The first tutorial presented R Markdown as a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+The [current walk-through](https://github.com/jtkulas/temp) was actually first presented as a follow-up to another "introduction to `R`Markdown" tutorial. The first tutorial presented `R`Markdown as a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
 
-For more details on using R Markdown see &lt;http://rmarkdown.rstudio.com&gt;.
+For more details on using `R`Markdown see &lt;http://rmarkdown.rstudio.com&gt;.
 
 ---
 
 ## What you missed 
 
-The first part of this tutorial entailed an introduction to rMarkdown's capabilities and getting everyone's personal computers to generate a default template .html file. We will get everyone up to speed in the following slides. Specifically, after this you should be able to:
+The first part of this tutorial provided an introduction to `R`Markdown's capabilities and got everyone's personal computers to generate a default template .html file. The next few slides replicate what was done in that tutorial. Specifically, after this you should be able to:
 
-+ Understand the differences between R, R Studio, and rMarkdown
-+ Be aware that rMarkdown has multiple capabilities
++ Understand the differences between `R`, `R` Studio, and `R`Markdown
++ Be aware that `R`Markdown has multiple capabilities
     + .html files, .pdf files, presentations, academic manuscripts
 + Be able to generate an example default .html template on your personal computer
 
@@ -55,37 +56,40 @@ The first part of this tutorial entailed an introduction to rMarkdown's capabili
 ---
 
 
-## Let's try the default HTML document again!
+## Let's try the default HTML document!
 
 ![](https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif)
 
 ---
+class: inverse
 
-## Creating
+## .fancy[Creating]
 
-The process to create a new rMarkdown file: File `\(\rightarrow\)` New File `\(\rightarrow\)` R Markdown
+The process to create a new `R`Markdown file procedes through drop-down options: File `\(\rightarrow\)` New File `\(\rightarrow\)` `R`Markdown
 
 ...then follow the wizard prompts
 
 &lt;img src="create.jpg";&gt;
 
 ---
+class: inverse
 
-## Activating
+## .fancy[Activating]
 
-.pull-right[
 When you click the `Knit` button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
+.pull-left[
+![](knit2.PNG)
 ]
 
-.pull-left[
+.pull-right[
 ![](https://media.giphy.com/media/3oEhmHmWP3Y9wQxoli/giphy.gif)
 ]
 
 ---
+class: inverse
 
-
-## You should get this:
+## .fancy[You should get this:]
 
 ...if you merely accept the default template, after you "knit", you should see this file pop up (note the elements and where they align in the script and output):
 
@@ -93,38 +97,52 @@ When you click the `Knit` button a document will be generated that includes both
 ![](template.PNG)
 
 ---
+class: inverse
 
+## .fancy["Chunks"???]
 
-## "Chunks"
+Chunks are blocks of data analyses. This is where you'll be requesting analyses and writing the `R` code commands you're already familiar with... lines 21 through 27 in the image below represent one "chunk".
 
-Chunks are blocks of data analyses. This is where we'll be requesting analyses and writing the `R` code commands you're already familiar with...
-
-You can edit the output of your chunk to determine what your final document displays. For example with the command `echo = ` 
- 
  ![](image3.png)
 
 ---
+class: inverse
 
-## Creating a chunk:
+## .fancy[Creating a chunk:]
+
+Three tickmarks indicate the start and end of your chunk. The commands can be written in many different languages, but you'll most commonly be using `r`: 
 
 ![]](image1rmarkdown.png)
 
-To edit the output of a chunk you can add different arguments to the `{r}` command: 
+To control the output of a chunk (for example, revealing or hiding the `R` commands) you can add different arguments to the `{r}` indicator: 
+
 ![](image2.png)
+
+
+---
+class: inverse
+
+## .fancy[Change the date:]
+
+Note also the *single "tick mark"*. That little symbol indicates that we want to use an "inline" command (this means it's a command made *outside* of a chunk). 
+
+![](time.PNG)
+
+Line numbers 8 `\(\rightarrow\)` 10 and 18 `\(\rightarrow\)` 20 represent two "chunks"
+
 
 ---
 
-
 ## Additional actions
 
-.pull-left[We'll revisit the default template creation, but also:
+.pull-left[On the next few slides, we'll extend the default template. Specifically, you'll be asked to:
 
 + Tweak the template (by asking for different output and writing slightly different commands)
     + Document title, author(s), plot edits
-    + Adding new `chunks`
-        + Tweaking `chunk` options
+    + Add new `chunks`
+        + Tweak `chunk` options
 + Create a .pdf file as output
-    + The .pdf option opens up many possibilities with rMarkdown
+    + The .pdf option opens up many possibilities with `R`Markdown
         + For example, academic papers with `papaja`
 ]
 
@@ -132,19 +150,7 @@ To edit the output of a chunk you can add different arguments to the `{r}` comma
 ![](goals.png)
 ]
 
-
 ---
-
-## Change the date:
-
-Note the "tick mark". That little symbol indicates that we want to use an "inline" command (this means it's a software command *outside* of a chunk). The commands can be many different languages, but we'll mostly be using `r`. 
-
-![](time.PNG)
-
-Line numbers 8 `\(\rightarrow\)` 10 and 18 `\(\rightarrow\)` 20 represent two "chunks"
-
----
-
 
 ## Exercise (Part I)
 
@@ -157,13 +163,15 @@ Line numbers 8 `\(\rightarrow\)` 10 and 18 `\(\rightarrow\)` 20 represent two "c
 ![](https://media.giphy.com/media/xT9DPIBYf0pAviBLzO/giphy.gif)
 
 ---
+class: inverse
 
+## .fancy[Answers (Exercise Part I)]
 
-## Great resource
+1. Title is in the YAML header
+2. Author is also in the YAML header
+3. Color is within the "pressure" chunk
 
-There's a very accessible and *appropriately detailed* high-level overview of everything you probably need to get started (and launch off) with Markdown [located here](https://codingclubuc3m.rbind.io/post/2019-09-24/) 
-
-![](https://media.giphy.com/media/l49JLOdJMXePYxYfm/giphy.gif)
+![](exercise1.PNG)
 
 ---
 
@@ -177,12 +185,21 @@ There's a very accessible and *appropriately detailed* high-level overview of ev
 
 ![](https://cdn.pixabay.com/photo/2018/09/04/10/27/learn-3653430__480.jpg)
 
+---
+class: inverse
+
+## .fancy[Answers (Exercise Part II)]
+
+1. New chunk is lines #14 through 18
+2. `echo=TRUE` asks for the `R` script to be revealed
+
+![](exercise2.PNG)
 
 ---
 
-## Papaja! 
+## Additional capabilities: `papaja`! 
 
-This is an R package that provides document formats to produce complete APA manuscripts from RMarkdown files (either PDF or Word), it also has helper functions that facilitate reporting statistics, tables, and plots. 
+`papaja` is an `R` package that produces complete APA formatted manuscripts from `R`Markdown files! It also has helper functions that facilitate the reporting of statistics, tables, and plots. 
 
 The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
 
@@ -193,20 +210,28 @@ The following site walks you through the installation of `papaja` and more gener
 ---
 ## What papja documents "look like"
 
-There are two primary output formats that you'll be interested in: 
-1. APA formatted manuscript (`man`), and
-2. Journal formatted manuscript (`jou`)
+There are two primary output formats that you'll likely be interested in: 
+1. APA formatted manuscripts (`man`), and
+2. Journal formatted manuscripts (`jou`)
 
 ![](papaja.png)
 
 ---
-## Let's first try a generic .pdf file!!!!
+## Before `papaja`, let's first try a simple generic .pdf file!!!!
 
-1. There are MikTex and TinyTex options 
-2. Generate a template markdown document (but as a .pdf)
+1. Install either [MikTex](https://miktex.org/) or `tinytex` (tinytex is an `R` package, [MikTex](https://miktex.org/) is installed outside of `R`)
+2. Generate a template markdown document (but this time as a .pdf)
 
 
-![](https://media.giphy.com/media/iNQ2cIve8rUqI/giphy.gif)
+![](https://media.giphy.com/media/U5DCNqss0DDF6NTSdS/giphy.gif)
+---
+class: inverse
+
+## .fancy[Changing your .html output to a .pdf]:
+
+Once MixTex or `tinytex` has been installed, simply replace the "html" with "pdf" within your YAML header prior to knitting:
+
+![](pdf.png)
 
 ---
 ## Exercise (Part III)
@@ -221,14 +246,41 @@ There are two primary output formats that you'll be interested in:
 ![](https://cdn.pixabay.com/photo/2020/04/16/14/06/llama-5050778__480.jpg)
 
 ---
+class: inverse
+
+## .fancy[Playing with output formats]:
+
+.pull-left[
+APA formatted manuscript submission:
+
+![](man.PNG)
+]
+
+.pull-right[
+Journal formatted published article:
+
+![](jou.PNG)
+]
+
+
+---
+
+## Great resource for further applications
+
+There's a very accessible and *appropriately detailed* high-level overview of everything you probably need to get started (and launch off) with Markdown [located here](https://codingclubuc3m.rbind.io/post/2019-09-24/) 
+
+![](https://media.giphy.com/media/l49JLOdJMXePYxYfm/giphy.gif)
+
+---
 ## The End
 
 That's it for now 
 
 ![](https://media.giphy.com/media/l4pTjOu0NsrLApt0Q/giphy.gif)
 
-...any requests for what to cover in the next rMarkdown session? 
-Hey Look! [Interactive Markdown Documents](https://www.youtube.com/watch?v=sQjnvaf072M)
+...if there are any requests for what to cover in a different `R`Markdown session, please [contact Eagle I.O](mailto: eagleio@montclair.edu)
+
++ Hey Look! [Interactive Markdown Documents](https://www.youtube.com/watch?v=sQjnvaf072M)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
