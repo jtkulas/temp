@@ -238,7 +238,7 @@ class: inverse
 
 Once MixTex or `tinytex` has been installed, simply replace the "html" with "pdf" within your YAML header prior to knitting:
 
-![](pdf.png)
+![](pdf.PNG)
 
 ---
 ## Exercise (Part III)
