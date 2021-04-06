@@ -1,5 +1,5 @@
 ---
-title: "`R`Markdown"
+title: "RMarkdown"
 author: "Kulas Renata"
 date: "6/13/2020"
 resource_files:
@@ -21,7 +21,7 @@ library(fontawesome) # from github: https://github.com/rstudio/fontawesome
 library(DiagrammeR)
 ```
 
-## `R`Markdown Tutorial
+## RMarkdown Tutorial
 
 This presentation is just one of a number of different tutorials produced by [Eagle I.O](https://eagle-io.weebly.com/) and is intended to serve as an introductory guide for MSU Psychology graduate students interested in extending their `R` skills - this one was authored by: 
 
@@ -38,22 +38,22 @@ This presentation is just one of a number of different tutorials produced by [Ea
 
 ---
 
-## `R`Markdown
+## RMarkdown
 
 ![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
 
-The [current walk-through](https://github.com/jtkulas/temp) was actually first presented as a follow-up to another "introduction to `R`Markdown" tutorial. The first tutorial presented `R`Markdown as a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+The [current walk-through](https://github.com/jtkulas/temp) was actually first presented as a follow-up to another "introduction to RMarkdown" tutorial. The first tutorial presented RMarkdown as a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
 
-For more details on using `R`Markdown see <http://rmarkdown.rstudio.com>.
+For more details on using RMarkdown see <http://rmarkdown.rstudio.com>.
 
 ---
 
 ## What you missed 
 
-The first part of this tutorial provided an introduction to `R`Markdown's capabilities and got everyone's personal computers to generate a default template .html file. The next few slides replicate what was done in that tutorial. Specifically, after this you should be able to:
+The first part of this tutorial provided an introduction to RMarkdown's capabilities and got everyone's personal computers to generate a default template .html file. The next few slides replicate what was done in that tutorial. Specifically, after this you should be able to:
 
-+ Understand the differences between `R`, `R` Studio, and `R`Markdown
-+ Be aware that `R`Markdown has multiple capabilities
++ Understand the differences between `R`, `R` Studio, and RMarkdown
++ Be aware that RMarkdown has multiple capabilities
     + .html files, .pdf files, presentations, academic manuscripts
 + Be able to generate an example default .html template on your personal computer
 
@@ -72,7 +72,7 @@ class: inverse
 
 ## .fancy[Creating]
 
-The process to create a new `R`Markdown file procedes through drop-down options: File $\rightarrow$ New File $\rightarrow$ `R`Markdown
+The process to create a new RMarkdown file procedes through drop-down options: File $\rightarrow$ New File $\rightarrow$ RMarkdown
 
 ...then follow the wizard prompts
 
@@ -149,7 +149,7 @@ Line numbers 8 $\rightarrow$ 10 and 18 $\rightarrow$ 20 represent two "chunks"
     + Add new `chunks`
         + Tweak `chunk` options
 + Create a .pdf file as output
-    + The .pdf option opens up many possibilities with `R`Markdown
+    + The .pdf option opens up many possibilities with RMarkdown
         + For example, academic papers with `papaja`
 ]
 
@@ -206,7 +206,7 @@ class: inverse
 
 ## Additional capabilities: `papaja`! 
 
-`papaja` is an `R` package that produces complete APA formatted manuscripts from `R`Markdown files! It also has helper functions that facilitate the reporting of statistics, tables, and plots. 
+`papaja` is an `R` package that produces complete APA formatted manuscripts from RMarkdown files! It also has helper functions that facilitate the reporting of statistics, tables, and plots. 
 
 The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
 
@@ -285,6 +285,6 @@ That's it for now
 
 ![](https://media.giphy.com/media/l4pTjOu0NsrLApt0Q/giphy.gif)
 
-...if there are any requests for what to cover in a different `R`Markdown session, please [contact Eagle I.O](mailto: eagleio@montclair.edu)
+...if there are any requests for what to cover in a different RMarkdown session, please [contact Eagle I.O](mailto: eagleio@montclair.edu)
 
 + Hey Look! [Interactive Markdown Documents](https://www.youtube.com/watch?v=sQjnvaf072M)
