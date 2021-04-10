@@ -8,6 +8,7 @@ output:
   xaringan::moon_reader:
     css: ["default", "sfah.css", "fonts.css"]
     seal: false
+    yolo: false
 ---
 
 ```{r setup, include=FALSE}
@@ -102,6 +103,15 @@ class: inverse
 
 
 ![](template.PNG)
+
+---
+class: inverse
+
+## .fancy[Whazzat???]
+
+Take a look at the "top" of your default markdown template... this section controls much of what RMarkdown *does* and you'll want to pay careful attention to this portion of any RMarkdown project. It's called your "YAML" header - this is reputedly an acronym for: <span style="color: red;">Yaml Aint Markup Language</span>
+
+![](yaml.PNG)
 
 ---
 class: inverse
