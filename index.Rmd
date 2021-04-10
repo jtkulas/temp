@@ -247,7 +247,7 @@ class: inverse
 
 ## .fancy[Changing your .html output to a .pdf]:
 
-Once MixTex or `tinytex` has been installed, simply replace the "html" with "pdf" within your YAML header prior to knitting:
+Once MikTex or `tinytex` has been installed, simply replace the "html" with "pdf" within your YAML header prior to knitting:
 
 ![](pdf.PNG)
 
