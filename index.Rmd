@@ -236,7 +236,7 @@ A moose once bit my sister...
 
 `papaja` is an `R` package that produces complete APA formatted manuscripts from RMarkdown files! It also has helper functions that facilitate the reporting of statistics, tables, and plots. 
 
-The following site walks you through the installation of `papaja` and more generally explains the need to use a LaTex add-on with .pdf files:
+The following site walks you through the installation of `papaja` and more generally explains the need to use a $\LaTeX$ add-on with .pdf files:
 
 <https://crsh.github.io/papaja_man/introduction.html#getting-started> 
 .center[
@@ -272,8 +272,6 @@ Once MikTex or `tinytex` has been installed, simply replace the "html" with "pdf
 
 ![](pdf.PNG)
 
-???
-Mynd you, moose bites Kan be pretti nasti...
 ---
 ## Exercise (Part III)
 
@@ -303,7 +301,8 @@ Journal formatted published article:
 ![](jou.PNG)
 ]
 
-
+???
+Mynd you, moose bites Kan be pretti nasti...
 ---
 
 ## Great resource for further applications
