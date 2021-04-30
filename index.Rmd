@@ -1,0 +1,328 @@
+---
+title: "RMarkdown"
+author: "Kulas Renata"
+date: "6/13/2020"
+resource_files:
+  - create.jpg
+output:
+  xaringan::moon_reader:
+    css: ["default", "sfah.css", "fonts.css"]
+    seal: false
+    yolo: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+# options(knitr.table.format = "html")
+library(tidyverse)
+library(babynames)
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+library(DiagrammeR)
+```
+
+## RMarkdown Tutorial
+
+This presentation is just one of a number of different tutorials produced by [Eagle I.O](https://eagle-io.weebly.com/) and is intended to serve as a resource for students interested in extending their `R` skills. This one was authored by: 
+
+.pull-left[
+[Renata Garcia Prieto Palacios Roji](https://www.linkedin.com/in/renatagppr/) 
+
+![](renata2.jpg)
+]
+
+.pull-right[[John Kulas](https://www.linkedin.com/in/john-kulas-184a031/)
+
+![](kulas.jpg)
+]
+.footnote[You can find different options for navigating these tutorials by hitting the `h` key on your keyboard.]
+---
+
+## RMarkdown
+.center[
+![](https://media.giphy.com/media/nB8mZtzvvrQnC/giphy.gif)
+]
+The [current walk-through](https://github.com/jtkulas/temp) was actually first presented as a follow-up to another "introduction to RMarkdown" tutorial. The first tutorial presented RMarkdown as a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+
+For more details on using RMarkdown see <http://rmarkdown.rstudio.com>.
+
+---
+
+## What you missed 
+
+The first part of this tutorial provided an introduction to RMarkdown's capabilities and got everyone's personal computers to generate a default template .html file. The next few slides replicate what was done in that tutorial. Specifically, after this you should be able to:
+
++ Understand the differences between `R`, `R` Studio, and RMarkdown
++ Be aware that RMarkdown has multiple capabilities
+    + .html files, .pdf files, presentations, academic manuscripts
++ Be able to generate an example default .html template on your personal computer
+
+.center[
+![](https://media.giphy.com/media/ZXKZWB13D6gFO/giphy.gif)
+]
+
+???
+
+Wi not trei a holiday in Sweeden this yer?
+
+---
+
+
+## Let's try the default HTML document!
+.center[
+![](https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif)
+]
+
+---
+class: inverse
+
+## .fancy[Creating]
+
+The process to create a new RMarkdown file procedes through drop-down options: File $\rightarrow$ New File $\rightarrow$ RMarkdown
+
+...then follow the wizard prompts
+
+<img src="create.jpg";>
+
+---
+class: inverse
+
+## .fancy[Activating]
+
+When you click the `Knit` button a document will be generated that includes both content as well as the output of any embedded `R` code chunks within the document.
+
+.pull-left[
+![](knit2.PNG)
+]
+
+.pull-right[
+![](https://media.giphy.com/media/3oEhmHmWP3Y9wQxoli/giphy.gif)
+]
+
+???
+See the loveli lakes
+
+---
+class: inverse
+
+## .fancy[You should get this:]
+
+...if you merely accept the default template, after you "knit", you should see this file pop up (note the elements and where they align in the script and output):
+
+
+![](template.PNG)
+
+---
+class: inverse
+
+## .fancy[Whazzat???]
+
+Take a look at the "top" of your default markdown template... this section controls much of what RMarkdown *does* and you'll want to pay careful attention to this portion of any RMarkdown project. It's called your "YAML" header - this is reputedly an acronym for: <span style="color: red;">Yaml Aint Markup Language</span>
+
+![](yaml.PNG)
+
+---
+class: inverse
+
+## .fancy["Chunks"???]
+
+Chunks are blocks of data analyses. This is where you'll be requesting analyses and writing the `R` code commands you're already familiar with. Lines 21 through 27 in the image below represent one "chunk".
+
+ ![](image3.png)
+
+???
+The wonderful telephone system
+
+---
+class: inverse
+
+## .fancy[Creating a chunk:]
+
+Three tickmarks indicate the start and end of your chunk. The commands within chunks can be written in many different languages, but you'll most commonly be using `r`: 
+
+![]](image1rmarkdown.png)
+
+To control the output of a chunk (for example, revealing or hiding the `R` commands) you can add different arguments to the `{r}` indicator: 
+
+![](image2.png)
+
+---
+class: inverse
+
+## .fancy[Inline commands (e.g., mini-chunks)]
+
+Note the *single "tick marks"* used below. That little symbol indicates that we want to use an "inline" command (this means it's a command made *outside* of a chunk). 
+
+![](time.PNG)
+
+Line numbers 8 $\rightarrow$ 10 and 18 $\rightarrow$ 20 represent two "chunks"
+
+???
+...and many interesting furry animals
+
+---
+
+## Additional actions
+
+.pull-left[On the next few slides, we'll extend the default template. Specifically, you'll be asked to:
+
++ Tweak the template (by asking for different output and writing slightly different commands)
+    + Document title, author(s), plot edits
+    + Add new `chunks`
+        + Tweak `chunk` options
++ Create a .pdf file as output
+    + The .pdf option opens up many possibilities with RMarkdown
+        + For example, academic papers with `papaja`
+]
+
+.pull-right[
+![](goals.png)
+]
+
+---
+
+## Exercise (Part I)
+
+
+1. Change the **title** of your .html document to some creative description of your choice
+2. Change the **authorship** to YOU (or your nickname)
+3. Change the **color** of the points within the `plot(pressure)` scatter plot
+
+
+![](https://media.giphy.com/media/xT9DPIBYf0pAviBLzO/giphy.gif)
+
+---
+class: inverse
+
+## .fancy[Answers (Exercise Part I)]
+
+1. Title is in the YAML header
+2. Author is also in the YAML header
+3. Color is within the "pressure" chunk
+
+![](exercise1.PNG)
+
+???
+Including the majestic moose
+---
+
+## Exercise (Part II)
+
+
+4. Create a new chunk in your document
+    + The new chunk will request a histogram of the `speed` variable within the `cars` dataset
+5. Edit the output of your chunk using the commands we learned (play with different `TRUE/FALSE` commands)
+
+
+![](https://cdn.pixabay.com/photo/2018/09/04/10/27/learn-3653430__480.jpg)
+
+---
+class: inverse
+
+## .fancy[Answers (Exercise Part II)]
+
+1. New chunk is lines #14 through 18
+2. `echo=TRUE` asks for the `R` script to be revealed
+
+![](exercise2.PNG)
+
+???
+A moose once bit my sister...
+
+---
+
+## Additional capabilities: `papaja`! 
+
+`papaja` is an `R` package that produces complete APA formatted manuscripts from RMarkdown files! It also has helper functions that facilitate the reporting of statistics, tables, and plots. 
+
+The following site walks you through the installation of `papaja` and more generally explains the need to use a $\LaTeX$ add-on with .pdf files:
+
+<https://crsh.github.io/papaja_man/introduction.html#getting-started> 
+.center[
+![](https://media.giphy.com/media/8Pa4hiMm6IEJW/giphy.gif)
+]
+
+---
+## What papja documents "look like"
+
+There are two primary output formats that you'll likely be interested in: 
+1. APA formatted manuscripts (`man`), and
+2. Journal formatted manuscripts (`jou`)
+
+![](papaja.png)
+
+???
+No realli! She was Karving her initials on the moose with the sharpened end of an interspace toothbrush given her by Svenge - her brother-in-law - an Oslo dentist and star of many Norweigian movies: *The Hot Hands of an Oslo Dentist*, *Fillings of Passion*, *The Huge Molars of Horst Nordfink*...
+---
+## Before `papaja`, let's first try a simple generic .pdf file!!!!
+
+1. Install either [MikTex](https://miktex.org/) or `tinytex` (tinytex is an `R` package, [MikTex](https://miktex.org/) is installed outside of `R`)
+2. Generate a template markdown document (but this time as a .pdf)
+
+.center[
+![](https://media.giphy.com/media/U5DCNqss0DDF6NTSdS/giphy.gif)
+]
+---
+class: inverse
+
+## .fancy[Changing your .html output to a .pdf]:
+
+Once MikTex or `tinytex` has been installed, simply replace the "html" with "pdf" within your YAML header prior to knitting:
+
+![](pdf.PNG)
+
+---
+## Exercise (Part III)
+
+
+1. Change your previous **.html** output to a **.pdf**
+2. Install `papaja` from GitHub and knit a template manuscript
+    + You'll also need to have the `devtools` package installed
+    + ...then type `devtools::install_github("crsh/papaja")`
+
+
+![](https://cdn.pixabay.com/photo/2020/04/16/14/06/llama-5050778__480.jpg)
+
+---
+class: inverse
+
+## .fancy[Playing with output formats]:
+
+.pull-left[
+APA formatted manuscript submission:
+
+![](man.PNG)
+]
+
+.pull-right[
+Journal formatted published article:
+
+![](jou.PNG)
+]
+
+???
+Mynd you, moose bites Kan be pretti nasti...
+---
+
+## Great resource for further applications
+
+There's a very accessible and *appropriately detailed* high-level overview of everything you probably need to get started (and launch off) with Markdown [located here](https://codingclubuc3m.rbind.io/post/2019-09-24/) 
+.center[
+![](https://media.giphy.com/media/l49JLOdJMXePYxYfm/giphy.gif)
+]
+---
+## The End
+
+That's it for now! 
+
+.center[
+![](https://media.giphy.com/media/l4pTjOu0NsrLApt0Q/giphy.gif)
+]
+...if there are any requests for what to cover in a different RMarkdown session, please [contact Eagle I.O](mailto: eagleio@montclair.edu)
+
++ Hey Look! [Interactive Markdown Documents](https://www.youtube.com/watch?v=sQjnvaf072M)
+
+???
+Moose trained by Yutte Hermsgervordenbrotborda  
+(Special Moose effects Olaf Prot)
